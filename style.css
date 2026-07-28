@@ -49,21 +49,33 @@ html {
     padding: 10px;
 }
 
-.link>a {
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    font-size: 24px;
-    text-align: center;
-    border-radius: 7px;
-    margin: 5px 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: 500;
+.link>a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    text-decoration:none;
+    color:black;
+    background:white;
+    padding:15px;
+    margin:8px 10px;
+    border-radius:10px;
+    font-size:22px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.link>a img{
+    width:35px;
+    height:35px;
+    object-fit:contain;
+    background-color: transparent;
 }
 
 .link>a:hover{
-    background-color: rgb(134, 219, 255);
+    background:#86dbff;
+    transform:scale(1.03);
 }
 
 .footer {
